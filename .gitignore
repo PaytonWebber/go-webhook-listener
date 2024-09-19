@@ -1,0 +1,9 @@
+# Binaries
+/webhook_listener
+
+# Config files with secrets
+/config/config.json
+
+# Logs
+*.log
+

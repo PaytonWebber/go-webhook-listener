@@ -1,0 +1,15 @@
+[Unit]
+Description=Webhook Listener Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/webhook_listener
+Restart=on-failure
+User=yourusername
+WorkingDirectory=/path/to/your/repo
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target
+
